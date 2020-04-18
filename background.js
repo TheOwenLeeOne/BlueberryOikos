@@ -1,3 +1,6 @@
+
+  var button = document.createElement("button");
+
   chrome.runtime.onInstalled.addListener(function() {
     chrome.storage.sync.set({color: '#3aa757'}, function() {
       console.log("The color is green.");
@@ -11,4 +14,5 @@
             actions: [new chrome.declarativeContent.ShowPageAction()]
       }]);
     });
+
   });
